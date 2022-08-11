@@ -1,0 +1,2 @@
+# SectionBackground
+UICollectionView为每一个section分区设置背景图片或颜色
