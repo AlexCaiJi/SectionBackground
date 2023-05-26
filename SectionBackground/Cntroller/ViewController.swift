@@ -13,10 +13,14 @@ public let KScreenH = UIScreen.main.bounds.size.height
 class ViewController: UIViewController {
 
     static let HADERVIEW_H:CGFloat = 150
-    private var imgs = ["https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594826745546&di=5d0ba3afc75910304c18dd40e3f269c2&imgtype=0&src=http%3A%2F%2F01.minipic.eastday.com%2F20170104%2F20170104151754_edeffcf48cbe18f87d4f4c1c6c381c7b_1.jpeg","https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594826745545&di=7774eec88ed2ebeeb42f499676185e69&imgtype=0&src=http%3A%2F%2F00.minipic.eastday.com%2F20161210%2F20161210143050_7096c2f7d732d7afb7f0c4c6a357595d_10.jpeg","https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594826745545&di=7076816ab7426036ee956539f80d553e&imgtype=0&src=http%3A%2F%2F00.minipic.eastday.com%2F20161216%2F20161216093731_399df0a518f7932d349ba3bb0a8ab3da_1.jpeg","https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594826745534&di=d5a9518a114bbacc618bd7dd83a9ba6b&imgtype=0&src=http%3A%2F%2F01.minipic.eastday.com%2F20161212%2F20161212144027_cded4c83f17c47604eb2be0530bb43ba_7.jpeg"]
+    private var imgs = ["https://img1.baidu.com/it/u=1960110688,1786190632&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=281",
+                        "https://img0.baidu.com/it/u=4162443464,2854908495&fm=253&fmt=auto&app=138&f=JPEG?w=800&h=500",
+                        "https://lmg.jj20.com/up/allimg/tp09/210H51R3313N3-0-lp.jpg"]
     
     
-    private var background_imgs = ["https://dss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1039784932,1678053317&fm=26&gp=0.jpg","https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1665068531,1355511799&fm=26&gp=0.jpg","https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594827505308&di=2b14600c668905c55c8c9fa744c917d6&imgtype=0&src=http%3A%2F%2Fpic1.win4000.com%2Fwallpaper%2Fe%2F59ae7117358a6.jpg%3Fdown"]
+    private var background_imgs = ["https://img2.baidu.com/it/u=1361506290,4036378790&fm=253&fmt=auto&app=138&f=JPEG?w=800&h=500",
+                                   "https://img0.baidu.com/it/u=1626237702,720888304&fm=253&fmt=auto&app=138&f=JPEG?w=800&h=500",
+                                   "https://img2.baidu.com/it/u=2048195462,703560066&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=333"]
     
     private lazy var layout = SectionDecorationLayout().then {
         $0.minimumLineSpacing = 10
@@ -60,7 +64,7 @@ extension ViewController:UICollectionViewDelegate,UICollectionViewDataSource,UIC
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if section == 0 {
-            return 15
+            return 3
         } else {
             return imgs.count
         }
@@ -74,7 +78,7 @@ extension ViewController:UICollectionViewDelegate,UICollectionViewDataSource,UIC
                 cell.imgView.kf.setImage(with: URL(string: imgs[indexPath.row]))
             } else {
                 
-                cell.imgView.kf.setImage(with: URL(string: "https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=4231721538,2399882538&fm=26&gp=0.jpg"))
+                cell.imgView.kf.setImage(with: URL(string: "https://img03.sogoucdn.com/app/a/100520021/ff5eee1cac0eb94a99c92e3774d6c600"))
             }
             
         } else {
