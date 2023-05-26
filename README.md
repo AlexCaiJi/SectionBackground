@@ -1,3 +1,4 @@
 # SectionBackground
 UICollectionView为每一个section分区设置背景图片或颜色
-![Uploading Simulator Screen Shot - iPhone 14 - 2023-05-26 at 15.19.33.png…]()
+
+![Screen Shot](https://github.com/AlexCaiJi/SectionBackground/assets/31532446/9a187d85-3b13-46c4-92a2-dd1183169d89)
